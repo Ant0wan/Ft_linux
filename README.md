@@ -26,3 +26,5 @@ https://github.com/sharkdp/bat
 
 - Man for Rust ?
 https://github.com/Jimskapt/rust-book-fr
+
+- Previous 42 projects ? 42sh, Ft_select, Ft_ls...
