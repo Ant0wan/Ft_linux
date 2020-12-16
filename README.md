@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/pscott/TaskMaster">
+  <a href="https://github.com/Ant0wan/Ft_linux">
     <img src="logo.png.png" alt="Logo" width="90" height="75">
   </a>
      <h1 align="center">Ft_linux</h1>
