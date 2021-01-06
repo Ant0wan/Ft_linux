@@ -24,7 +24,11 @@ https://github.com/orf/gping
 - Cat in Rust
 https://github.com/sharkdp/bat
 
-- Man for Rust ?
+- Man for Rust
 https://github.com/Jimskapt/rust-book-fr
 
-- Previous 42 projects ? 42sh, Ft_select, Ft_ls...
+- Previous 42 projects (option at install): 42sh, Ft_select, Ft_ls...
+
+- Docker + Kubernetes (kubectl + kubelet)
+
+- Kubernetes Kind for k8s app dev: https://kind.sigs.k8s.io/
