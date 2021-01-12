@@ -31,6 +31,7 @@ POWERLEVEL9K_CUSTOM_FEDORA_ICON="echo  "
 POWERLEVEL9K_CUSTOM_FEDORA_ICON_BACKGROUND=069
 POWERLEVEL9K_CUSTOM_FEDORA_ICON_FOREGROUND=015
 ```
+- Gnome + Sweet-dark theme https://www.gnome-look.org/p/1253385/
 
 - Rust itself + debug and tools
 
