@@ -18,6 +18,8 @@
 
 - Zsh + Oh-my-zsh + powerlevel9k + nerdfon-cpmplete +  logo
 
+```shell=
+$ ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_DISABLE_RPROMPT=true
@@ -28,7 +30,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_fedora_icon dir vcs)
 POWERLEVEL9K_CUSTOM_FEDORA_ICON="echo  "
 POWERLEVEL9K_CUSTOM_FEDORA_ICON_BACKGROUND=069
 POWERLEVEL9K_CUSTOM_FEDORA_ICON_FOREGROUND=015
-
+```
 
 - Rust itself + debug and tools
 
