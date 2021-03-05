@@ -49,3 +49,7 @@ https://github.com/Jimskapt/rust-book-fr
 - Docker + Kubernetes (kubectl + kubelet)
 
 - Kubernetes Kind for k8s app dev: https://kind.sigs.k8s.io/
+
+- Ansible
+
+- Ripgrep https://github.com/BurntSushi/ripgrep
