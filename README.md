@@ -53,3 +53,7 @@ https://github.com/Jimskapt/rust-book-fr
 - Ansible
 
 - Ripgrep https://github.com/BurntSushi/ripgrep
+
+- exa ls in Rust https://github.com/ogham/exa
+
+- https://zaiste.net/posts/shell-commands-rust/
