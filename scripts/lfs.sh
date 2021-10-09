@@ -13,4 +13,6 @@ if ! grep -q "^${LFS}" /proc/mounts; then
 
 	parted ${LFS_DISK} mkpart primary ext4 100MB 50GB
 	mkfs.ext4 ${LFS_DISK}2
+	mkdir -p $LFS
+	mount ${LFS_DISK}2 $LFS
 fi
