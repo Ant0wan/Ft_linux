@@ -16,3 +16,9 @@ if ! grep -q "^${LFS}" /proc/mounts; then
 	mkdir -p $LFS
 	mount ${LFS_DISK}2 $LFS
 fi
+
+mkdir -pv ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
+chown -v ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
+case $(uname -m) in
+	x86_64) mkdir -pv lfs ${LFS}/lib64 && chown -v lfs ${LFS}/lib64 ;;
+esac
