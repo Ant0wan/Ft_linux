@@ -23,3 +23,8 @@ chown -v lfs ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
 case $(uname -m) in
 	x86_64) mkdir -pv ${LFS}/lib64 && chown -v lfs ${LFS}/lib64 ;;
 esac
+
+export PATH=${LFS}/tools/bin:$PATH
+while read -r line; do
+	wget $(echo $line | cut -d ';' -f3) --directory-prefix=${LFS}/sources/
+done < packages.csv
