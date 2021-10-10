@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 export LFS=/mnt/lfs
 export LFS_TGT=x86_64-lfs-linux-gnu
@@ -18,7 +19,7 @@ if ! grep -q "^${LFS}" /proc/mounts; then
 fi
 
 mkdir -pv ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
-chown -v ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
+chown -v lfs ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
 case $(uname -m) in
 	x86_64) mkdir -pv lfs ${LFS}/lib64 && chown -v lfs ${LFS}/lib64 ;;
 esac
