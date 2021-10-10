@@ -31,4 +31,4 @@ export PATH=${LFS}/tools/bin:$PATH
 while read -r line; do
 	wget $(echo $line | cut -d ';' -f3) --directory-prefix=${LFS}/sources/
 done < packages.csv
-chown -Rv lfs ${LFS}/sources/
+chown -Rv lfs:lfs ${LFS}/sources/
