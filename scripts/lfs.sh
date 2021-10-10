@@ -32,3 +32,11 @@ while read -r line; do
 	wget $(echo $line | cut -d ';' -f3) --directory-prefix=${LFS}/sources/
 done < packages.csv
 chown -Rv lfs:lfs ${LFS}/sources/
+
+
+# Compiling binaries
+#cp --no-preserve binutils.sh ${LFS}/sources/
+#cd ${LFS}/sources/
+
+#    Binutils
+#su -c binutils.sh lfs
