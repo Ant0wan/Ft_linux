@@ -5,6 +5,7 @@ export LFS=/mnt/lfs
 export LFS_TGT=x86_64-lfs-linux-gnu
 export LFS_DISK=/dev/sda
 
+# Paritioning disk holding build
 if ! grep -q "${LFS}" /proc/mounts; then
 	parted ${LFS_DISK} mklabel gpt
 
@@ -18,13 +19,16 @@ if ! grep -q "${LFS}" /proc/mounts; then
 	mount ${LFS_DISK}2 $LFS
 fi
 
+# Creating basic fs dirs
 mkdir -vp ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
 chown -v lfs ${LFS}/{sources,tools,boot,etc,bin,lib,sbin,usr,var}
 case $(uname -m) in
 	x86_64) mkdir -pv ${LFS}/lib64 && chown -v lfs ${LFS}/lib64 ;;
 esac
 
+# Download utility sources
 export PATH=${LFS}/tools/bin:$PATH
 while read -r line; do
 	wget $(echo $line | cut -d ';' -f3) --directory-prefix=${LFS}/sources/
 done < packages.csv
+chown -Rv lfs ${LFS}/sources/
