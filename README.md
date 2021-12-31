@@ -42,6 +42,15 @@
   </p>
 </p>
 
+This project is related to Kernel programming. It is a base distro for the kernel projects. Kernel-code will be executed here, on this distro.
+
+### Requirements
+
+• Build the Linux Kernel
+• Install some binaries (See the list below)
+• Implement a filesystem hierarchy compliant with the standards
+• Connect to the Internet
+
 
 ### Ideas
 
