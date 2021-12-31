@@ -12,6 +12,8 @@
  CI Badges Here
 </div>
 
+This project is related to Kernel programming. It is a base distro for the kernel projects. Kernel-code will be executed here, on this distro.
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -42,7 +44,6 @@
   </p>
 </p>
 
-This project is related to Kernel programming. It is a base distro for the kernel projects. Kernel-code will be executed here, on this distro.
 
 ### Requirements
 
