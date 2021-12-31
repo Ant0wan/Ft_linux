@@ -46,15 +46,12 @@
 ### Ideas
 
 Lightweight distro
-
 - containerd
-
 - k8s preinstalled ?
-
-
 - Previous 42 projects (option at install): 42sh, Ft\_select, Ft\_ls... ? Why not
 - Create my own repo for apt and yum, then apt install 42sh will work
-
-
-
 - https://zaiste.net/posts/shell-commands-rust/
+
+### Get Started
+
+
